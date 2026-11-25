@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title>图片编辑回归测试</title>
+  <style>
+    body { margin: 0; min-height: 900px; background: #f6f2e9; }
+    .card { display: grid; grid-template-columns: 420px 1fr; gap: 30px; margin: 80px; padding: 30px; border: 3px solid #171a20; }
+    .card > img { position: static !important; width: 100% !important; height: 360px !important; min-height: 360px; max-height: 360px; object-fit: cover; }
+    h1 { font: 800 42px/1.2 sans-serif; }
+  </style>
+</head>
+<body>
+  <article class="card">
+    <img alt="缩放测试图片" style="position:absolute;left:728px;top:9272px;width:194px;height:267px" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='600'%3E%3Crect width='800' height='600' fill='%231f756e'/%3E%3Ccircle cx='400' cy='270' r='145' fill='%23ffbd59'/%3E%3Ctext x='400' y='515' text-anchor='middle' font-size='64' fill='white'%3EIMAGE%3C/text%3E%3C/svg%3E">
+    <div><h1>图片应可自由缩放</h1><p>此页面故意使用 width、height 和 position 的 !important 规则。</p></div>
+  </article>
+</body>
+</html>
